@@ -43,16 +43,3 @@ include_guard()
         ${FNCT-CORE-2WRPR_sdk_SRC_DIR}/kr/krThread/v_${KR_THREAD_VER}
         ${FNCT-CORE-2WRPR_sdk_SRC_DIR}/sy/syThread/v_${SY_THREAD_VER}
     )
-
-##    ## TEMPLATE source to use in cmake-auto-generation code
-## 
-##        set(SRC_THREAD_TBL_TEMPLATE_RPATH                       kr/krThread/v_${KR_THREAD_VER} )
-##
-##        set(SRC_THREAD_TBL_TEMPLATE_DIR                         ${FNCT_CORE_2WRPR_SRC_DIR}/${SRC_THREAD_TBL_TEMPLATE_RPATH} )
-##        set(CPP_THREAD_TBL_TEMPLATE                             ${SRC_THREAD_TBL_TEMPLATE_DIR}/krThreadTbl_template.cpp )
-##
-##        set(FNCT_CORE_2WRPR_SRC_DIR_FROM_BUILD                  ${MPFW_CODE_DIR_FROM_BUILD}/${FNCT_CORE_2WRPR_SRC_RPATH} )
-##
-##        set(SRC_THREAD_TBL_TEMPLATE_DIR_FROM_BUILD              ${FNCT_CORE_2WRPR_SRC_DIR_FROM_BUILD}/${SRC_THREAD_TBL_TEMPLATE_RPATH}  )
-##        set(CPP_THREAD_TBL_TEMPLATE_FROM_BUILD                  ${SRC_THREAD_TBL_TEMPLATE_DIR_FROM_BUILD}/krThreadTbl_template.cpp )
-##

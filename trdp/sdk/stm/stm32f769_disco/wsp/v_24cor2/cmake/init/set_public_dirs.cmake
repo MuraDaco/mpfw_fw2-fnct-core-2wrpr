@@ -37,11 +37,12 @@ include_guard()
 ### --- set ..._<module name>_CONFIG_DIR variable
 ## --- start section
 
-    ## my own config file
+    set(CURR_MOD_NAME       FNCT-CORE-2WRPR)
 
-        set(FNCT-CORE-2WRPR_DEFAULT_CONFIG_RPATH  ${FNCT-CORE-2WRPR_sdk_SRC_RPATH}/config)
-        RegisterConfigDir(FNCT-CORE-2WRPR_CONFIG_DIR      MPFW_CODE_DIR       FNCT-CORE-2WRPR_CONFIG_RPATH      FNCT-CORE-2WRPR_DEFAULT_CONFIG_RPATH )
-        message("INFO - FNCT-CORE-2WRPR_CONFIG_DIR:       ${FNCT-CORE-2WRPR_CONFIG_DIR}")
+    ## my own config file
+        set(${CURR_MOD_NAME}_DEFAULT_CONFIG_RPATH  ${${CURR_MOD_NAME}_sdk_SRC_RPATH}/config)
+        RegisterConfigDir(${CURR_MOD_NAME}_CONFIG_DIR      MPFW_CODE_DIR       ${CURR_MOD_NAME}_CONFIG_RPATH      ${CURR_MOD_NAME}_DEFAULT_CONFIG_RPATH )
+        message("INFO - ${CURR_MOD_NAME}_CONFIG_DIR:       ${${CURR_MOD_NAME}_CONFIG_DIR}")
 
     ## other's config files
 
