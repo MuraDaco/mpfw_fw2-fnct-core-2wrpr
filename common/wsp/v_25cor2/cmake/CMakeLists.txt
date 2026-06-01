@@ -1,7 +1,8 @@
 #   *******************************************************************************
 #   
 #   mpfw / fw2 - Multi Platform FirmWare FrameWork 
-#       
+#       library that contains the "main" entry point and, 
+#       eventualy, application code that is platform dependent
 #   Copyright (C) (2023) Marco Dau
 #   
 #   This program is free software: you can redistribute it and/or modify
@@ -22,17 +23,22 @@
 #   
 #   *******************************************************************************
 
-### ---------------------------
-##
-#   set_depenedecies_list.cmake
-#
-#   Created on: June, 1st 2025  (Sun)
-#   Author: Marco Dau
-##
-### ---------------------------
+#### _______________________________________________________________
+## *** Section  0 - HOW_TO_USE
 
-include_guard()
+#### _______________________________________________________________
+## *** Section  1 - CMAKE INIT
+    cmake_minimum_required(VERSION 3.16)
 
-    set(FNCT-CORE-2WRPR_cmmn_DEPS_LIST
-        ## name                         _WSP_VER    _SRC_CFG    EXTNL_LIB ([N]o/[Y]es)
-    )
+#### _______________________________________________________________
+## *** Section  2 - SET ROOT RELATIVE PATHS & NAMES MODULES
+    include(${MPFW_CODE_CMAKE_DIR}/CMakeLists_steps/init_step_0.cmake)
+
+#### _______________________________________________________________
+## *** Section  3 - SET STANDARD PROJECT VARIABLES
+    # set the project name and version
+    project(${PROJECT_NAME} VERSION 1.0)
+
+#### _______________________________________________________________
+## *** Section  4 - SET STANDARD AND SPECIFIC VARIABLES & BUILD LIBRARY CONFIG COMMANDS
+    include(${MPFW_CODE_CMAKE_DIR}/CMakeLists_steps/step_all.cmake)

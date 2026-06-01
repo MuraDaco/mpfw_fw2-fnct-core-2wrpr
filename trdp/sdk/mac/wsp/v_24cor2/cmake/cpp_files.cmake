@@ -33,7 +33,9 @@
 
 include_guard()
 
-    set(FNCT-CORE-2WRPR_sdk_SOURCE_FILES_CPP
+    set(CURR_MOD_NAME       FNCT-CORE-2WRPR)
+
+    set(${CURR_MOD_NAME}_sdk_SOURCE_FILES_CPP
 
         ${FNCT-CORE-2WRPR_sdk_SRC_DIR}/kr/krThread/v_${KR_THREAD_VER}/krThread.cpp
         ${FNCT-CORE-2WRPR_sdk_SRC_DIR}/kr/krThread/v_${KR_THREAD_VER}/krThreadManager.cpp

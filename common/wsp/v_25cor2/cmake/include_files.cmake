@@ -24,9 +24,16 @@
 
 ### ---------------------------
 ##
-#   cpp_files.cmake
+#   include_files.cmake
 #
 #   Created on: Aug, 26th 2025  (Tue)
 #   Author: Marco Dau
 ##
 ### ---------------------------
+
+    set(CURR_MOD_NAME       FNCT-CORE-2WRPR)
+
+    set(${CURR_MOD_NAME}_cmmn_SOURCE_FILES_H
+        ${${CURR_MOD_NAME}_cmmn_SRC_DIR}/kr/krThread/v_${KR_THREAD_CMMN_VER}
+    )
+

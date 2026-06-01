@@ -33,7 +33,9 @@
 
 include_guard()
 
-    set(FNCT-CORE-2WRPR_sdk_DEPS_LIST   
+    set(CURR_MOD_NAME       FNCT-CORE-2WRPR)
+
+    set(${CURR_MOD_NAME}_sdk_DEPS_LIST   
         ## name                     _WSP_VER    _SRC_CFG    EXTNL_LIB ([N]o/[Y]es)
-        TRDP-SDK-NXP-0TRDP          33nxp0      01          N
+        TRDP-SDK-NXP-0TRDP          34nxp0      01          N
     )

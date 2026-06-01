@@ -33,15 +33,20 @@
 
 include_guard()
 
-message(STATUS "Start set_public_rpath of -->> HW/2WRPR <<--")
+	set(CURR_MOD_NAME       FNCT-CORE-2WRPR	)
+
+	message(STATUS "Start set_public_config_rpath of -->> ${CURR_MOD_NAME} <<--")
 
 ### **************************************************
 ### --- set ..._<module name>_CONFIG_RPATH variable
 ## --- start section
 
-    ## my own config file
-
     ## other's config files
+        ## set(OWNR_MOD_NAME       <owner module name of config file> has the same format of <${CURR_MOD_NAME}>)
+        ## set(${CURR_MOD_NAME}__${OWNR_MOD_NAME}__CONFIG__RPATH		${${CURR_MOD_NAME}_sdk_SRC_RPATH}/path to config file)
+        ## RegisterConfigRpath(${OWNR_MOD_NAME}_CONFIG_RPATH		${CURR_MOD_NAME}__${OWNR_MOD_NAME}__CONFIG__RPATH)
+
 
     ## --- end section
     ### **************************************************
+

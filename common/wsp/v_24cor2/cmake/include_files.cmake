@@ -31,7 +31,9 @@
 ##
 ### ---------------------------
 
-    set(FNCT-CORE-2WRPR_cmmn_SOURCE_FILES_H
-        ${FNCT-CORE-2WRPR_cmmn_SRC_DIR}/kr/krThread/v_${KR_THREAD_CMMN_VER}
+    set(CURR_MOD_NAME       FNCT-CORE-2WRPR)
+
+    set(${CURR_MOD_NAME}_cmmn_SOURCE_FILES_H
+        ${${CURR_MOD_NAME}_cmmn_SRC_DIR}/kr/krThread/v_${KR_THREAD_CMMN_VER}
     )
 

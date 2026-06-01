@@ -24,7 +24,7 @@
 
 ### ---------------------------
 ##
-#   set_public_rpath.cmake
+#   set_public_dirs.cmake
 #
 #   Created on: May, 23rd 2025  (Fri)
 #   Author: Marco Dau
@@ -33,17 +33,25 @@
 
 include_guard()
 
-message(STATUS "Start set_public_rpath of -->> CORE-2WRPR <<--")
-
 ### **************************************************
-### --- set ..._<module name>_CONFIG_RPATH variable
+### --- set ..._<module name>_CONFIG_DIR variable
 ## --- start section
 
+    set(CURR_MOD_NAME       FNCT-CORE-2WRPR)
+
+    ## ....... HELP start 
     ## my own config file
-    set(FNCT-CORE-2WRPR_DEFAULT_CONFIG_RPATH  ${FNCT-CORE-2WRPR_SRC_RPATH}/config)
+        ## set(${CURR_MOD_NAME}_DEFAULT_CONFIG_RPATH  ${${CURR_MOD_NAME}_sdk_SRC_RPATH}/path to config file)
+        ## RegisterConfigDir(${CURR_MOD_NAME}_CONFIG_DIR      MPFW_CODE_DIR       ${CURR_MOD_NAME}_CONFIG_RPATH      ${CURR_MOD_NAME}_DEFAULT_CONFIG_RPATH )
+        ## message("INFO - ${CURR_MOD_NAME}_CONFIG_DIR:       ${${CURR_MOD_NAME}_CONFIG_DIR}")
+    ## ....... HELP end 
+
+    ## my own config file
+        set(${CURR_MOD_NAME}_DEFAULT_CONFIG_RPATH  ${${CURR_MOD_NAME}_sdk_SRC_RPATH}/config)
+        RegisterConfigDir(${CURR_MOD_NAME}_CONFIG_DIR      MPFW_CODE_DIR       ${CURR_MOD_NAME}_CONFIG_RPATH      ${CURR_MOD_NAME}_DEFAULT_CONFIG_RPATH )
+        message("INFO - ${CURR_MOD_NAME}_CONFIG_DIR:       ${${CURR_MOD_NAME}_CONFIG_DIR}")
 
     ## other's config files
 
     ## --- end section
     ### **************************************************
-

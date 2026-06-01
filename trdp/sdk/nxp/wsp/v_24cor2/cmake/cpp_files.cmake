@@ -33,12 +33,15 @@
 
 include_guard()
 
-    set(FNCT-CORE-2WRPR_sdk_SOURCE_FILES_CPP
+    set(CURR_MOD_NAME       FNCT-CORE-2WRPR)
 
-        ${FNCT-CORE-2WRPR_sdk_SRC_DIR}/kr/krThread/v_${KR_THREAD_VER}/krThread.cpp
-        ${FNCT-CORE-2WRPR_sdk_SRC_DIR}/kr/krThread/v_${KR_THREAD_VER}/krThreadManager.cpp
-        ${FNCT-CORE-2WRPR_sdk_SRC_DIR}/kr/krThread/v_${KR_THREAD_VER}/KrThreadCfg.cpp
-        ${FNCT-CORE-2WRPR_sdk_SRC_DIR}/kr/krThread/v_${KR_THREAD_VER}/KrThreadCfgTbl.cpp
 
-        ${FNCT-CORE-2WRPR_sdk_SRC_DIR}/sy/syThread/v_${SY_THREAD_VER}/wp_sys_thread.cpp
+    set(${CURR_MOD_NAME}_sdk_SOURCE_FILES_CPP
+
+        ${${CURR_MOD_NAME}_sdk_SRC_DIR}/kr/krThread/v_${KR_THREAD_VER}/krThread.cpp
+        ${${CURR_MOD_NAME}_sdk_SRC_DIR}/kr/krThread/v_${KR_THREAD_VER}/krThreadManager.cpp
+        ${${CURR_MOD_NAME}_sdk_SRC_DIR}/kr/krThread/v_${KR_THREAD_VER}/KrThreadCfg.cpp
+        ${${CURR_MOD_NAME}_sdk_SRC_DIR}/kr/krThread/v_${KR_THREAD_VER}/KrThreadCfgTbl.cpp
+
+        ${${CURR_MOD_NAME}_sdk_SRC_DIR}/sy/syThread/v_${SY_THREAD_VER}/wp_sys_thread.cpp
     )

@@ -34,12 +34,14 @@
 
 include_guard()
 
-    set(FNCT-CORE-2WRPR_sdk_SOURCE_FILES_H
+    set(CURR_MOD_NAME       FNCT-CORE-2WRPR)
+
+    set(${CURR_MOD_NAME}_sdk_SOURCE_FILES_H
 
         # ---------------------------------
         # ... configuration
-        ${FNCT-CORE-2WRPR_CONFIG_DIR}
+        ${${CURR_MOD_NAME}_CONFIG_DIR}
         # ---------------------------------
-        ${FNCT-CORE-2WRPR_sdk_SRC_DIR}/kr/krThread/v_${KR_THREAD_VER}
-        ${FNCT-CORE-2WRPR_sdk_SRC_DIR}/sy/syThread/v_${SY_THREAD_VER}
+        ${${CURR_MOD_NAME}_sdk_SRC_DIR}/kr/krThread/v_${KR_THREAD_VER}
+        ${${CURR_MOD_NAME}_sdk_SRC_DIR}/sy/syThread/v_${SY_THREAD_VER}
     )
